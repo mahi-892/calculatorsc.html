@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+.calculator{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 25px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#toggle{
+    background-color: royalblue;
+}
+.button, .scientific-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.scien{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(39, 77%, 83%);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+.operator{
+    background-color: lightcoral;
+}
+.operator:hover{
+    background-color: lightcoral;
+}
+.operator:active{
+    background-color: hsl(35, 100%, 80%);
+}
+.scientific-buttons hidden:hover{
+    background-color:  hsl(180, 100%, 40%);
+}
+.scientific-buttons hidden:active{
+    background-color:  hsl(180, 100%, 60%);
+}
+.scien:hover{
+    background-color: hsl(39, 77%, 93%);
+}
+.scien:active{
+    background-color: hsl(39, 77%, 110%);
+}
